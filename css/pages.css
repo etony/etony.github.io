@@ -10,3 +10,72 @@
   text-decoration: none;
   color: #005787;
 }
+
+
+mainmenu {width:987px; height:32px; position:relative; z-index:100; border-left:1px solid #cad4e3; border-right:2px solid #cad4e3; font-family:arial, sans-serif;}
+    /* hack to correct IE5.5 faulty box model */
+    * html .mainmenu {width:990px; w\idth:987px;}
+    /* remove all the bullets, borders and padding from the default list styling */
+    .mainmenu ul {padding:0;margin:0;list-style-type:none;}
+    .mainmenu ul ul {width:169px;}
+    /* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+    .mainmenu li {float:left;width:141px;position:relative;}
+    /* style the links for the top level */
+    .mainmenu a, .mainmenu a:visited {display:block;font-size:12px;text-decoration:none; color:#000; width:130px; height:30px; border:1px solid #fff; border-width:1px 0 1px 1px; /*background:#09c;*/ background: #cad4e3; padding-left:10px; line-height:29px; font-weight:bold;}
+    .mainmenu a.first, .mainmenu a.first:visited {border-left:1px solid #cad4e3;}
+
+    /* a hack so that IE5.5 faulty box model is corrected */
+    * html .mainmenu a, * html .mainmenu a:visited {width:141px; w\idth:130px;}
+
+    /* style the second level background */
+    .mainmenu ul ul a.drop, .mainmenu ul ul a.drop:visited {background:#d4d8bd url(img/grey-arrow.gif) no-repeat 150px center;}
+    /* style the second level hover */
+    .mainmenu ul ul a.drop:hover{background:#c9ba65 url(../img/blue-arrow.gif) no-repeat 150px center;}
+    .mainmenu ul ul :hover > a.drop {background:#c9ba65 url(../img/blue-arrow.gif) no-repeat 150px center;}
+    /* style the third level background */
+    .mainmenu ul ul ul a, .mainmenu ul ul ul a:visited {background:#e2dfa8;}
+    /* style the third level hover */
+    .mainmenu ul ul ul a:hover {background:#b2ab9b;}
+
+
+    /* hide the sub levels and give them a positon absolute so that they take up no room */
+    .mainmenu ul ul {visibility:hidden;position:absolute;height:0;top:31px;left:0; width:169px;border-top:1px solid #fff;}
+    /* another hack for IE5.5 */
+    * html .mainmenu ul ul {top:30px;t\op:31px;}
+
+    /* position the third level flyout menu */
+    .mainmenu ul ul ul{left:169px; top:-1px; width:169px;}
+
+    /* position the third level flyout menu for a left flyout */
+    .mainmenu ul ul ul.left {left:-169px;}
+
+    /* style the table so that it takes no ppart in the layout - required for IE to work */
+    .mainmenu table {position:absolute; top:0; left:0; border-collapse:collapse;;}
+
+    /* added by CK Lai, to solve white space bug in .mainmenu when rendered in IE6 */
+    .mainmenu table {margin:0;}
+
+    /* style the second level links */
+    .mainmenu ul ul a, .mainmenu ul ul a:visited {background:#d4d8bd; color:#000; height:auto; line-height:1em; padding:5px 10px; width:148px;border-width:0 1px 1px 1px;}
+    /* yet another hack for IE5.5 */
+    * html .mainmenu ul ul a, * html .mainmenu ul ul a:visited {width:170px;w\idth:148px;}
+
+    /* style the top level hover */
+    .mainmenu a:hover, .mainmenu ul ul a:hover{color:#000; background:#b7d186;}
+    .mainmenu :hover > a, .mainmenu ul ul :hover > a {color:#000; background:#b7d186;}
+
+    /* make the second level visible when hover on first level list OR link */
+    .mainmenu ul li:hover ul,
+    .mainmenu ul a:hover ul{visibility:visible; }
+    /* keep the third level hidden when you hover on first level list OR link */
+    .mainmenu ul :hover ul ul{visibility:hidden;}
+
+    /* added by CK Lai: keep the fourth level hidden when you hover on first level list, second level list OR link */
+    .mainmenu ul :hover ul ul ul,
+    .mainmenu ul :hover ul :hover ul ul{visibility:hidden;}
+
+    /* make the third level visible when you hover over second level list OR link */
+    .mainmenu ul :hover ul :hover ul{ visibility:visible;}
+
+    /* added by CK Lai: keep the fourth level visible when you hover on third level list OR link */
+    .mainmenu ul :hover ul :hover ul :hover ul{visibility:visible;}
