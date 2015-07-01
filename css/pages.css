@@ -12,5 +12,5 @@
 }
 
 
-mainmenu { font-family:arial, sans-serif;}
+mainmenu { font-family:arial, sans-serif;font-size:12px;}
 .mainmenu a, .mainmenu a:visited {display:block;font-size:12px; color:#000;  border:1px solid #fff;  background: #cad4e3; font-weight:bold;}
