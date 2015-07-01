@@ -1,0 +1,12 @@
+#footer-message a,
+#footer-message a:visited
+{
+  text-decoration: none;
+  color: #fc7316;
+}
+
+#footer-message a:hover
+{
+  text-decoration: none;
+  color: #005787;
+}
