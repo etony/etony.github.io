@@ -3,12 +3,16 @@
 {
   text-decoration: none;
   color: #fc7316;
+  font-weight:bold;
+  font-family:times, serif;
 }
 
 #footer-message a:hover
 {
   text-decoration: none;
   color: #005787;
+  font-weight:bold;
+  font-family:arial, sans-serif;
 }
 
 
