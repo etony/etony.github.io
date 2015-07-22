@@ -16,9 +16,10 @@
 }
 
 
-.mainmenu {color:#696969; font-family:arial, sans-serif;font-size:16px;}
+.mainmenu { font-family:arial, sans-serif;font-size:16px;}
 .mainmenu a, .mainmenu a:visited{display:block; color:#000;  border:1px solid #fff;  font-weight:bold; text-decoration:none;}
 .mainmenu a:hover {text-decoration: underline}
 
 .div_heading{color:#696969;font-size:1.6em;border:1px solid #cad4e3;border-left:2em solid #cad4e3;float:left;padding:.2em;word-wrap:break-word}
 
+body {color:#696969;}

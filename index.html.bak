@@ -31,7 +31,7 @@
   </li>
   </ul>
   
-  
+  <hr />
   <div class="div_heading" style="width: calc(100% - 2.4em);">Articles</div>
 
   <hr />
@@ -42,7 +42,6 @@
   </ul>
   
   </div>
-  <hr />
   <div id="footer-message">
   	Design by <a href="mailto:etoy.an@gmail.com" title="etony.C.F.AN">etony.C.F.AN</a>  | <a href="http://jigsaw.w3.org/css-validator/" title="Validate CSS code">CSS 3.0</a></p>
 </div >
